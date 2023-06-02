@@ -7,4 +7,4 @@ resources:
 images:
 - name: driver
   newName: sidartasilva/maratona-fc-1-part-5-driver-test
-  newTag: novatag
+  newTag: 840ed4a35dd04570da99b1c1b6b9e6d2f30ce1b5
