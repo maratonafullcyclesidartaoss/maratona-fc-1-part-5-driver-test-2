@@ -1,5 +1,6 @@
 name: cd-driver
 on:
+  # **** ALTERAR PARA PULL REQUEST ****
   push:
     branches:
       - master
@@ -42,4 +43,5 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          # ****  ALTERAR  ****
           repository: maratonafullcyclesidartaoss/maratona-fc-1-part-5-driver-test-2

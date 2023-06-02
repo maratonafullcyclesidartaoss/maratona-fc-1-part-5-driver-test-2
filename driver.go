@@ -120,9 +120,11 @@ func main() {
 	log.Println("alive")
 
 	r := chi.NewRouter()
+
 	r.Use(middleware.Logger)
 
 	r.Get("/drivers", ListDrivers)
+
 	r.Get("/drivers/{id}", GetDriver)
 
 	u := "http://" + os.Getenv("SWAGGER_HOST") + ":" + os.Getenv("SWAGGER_PORT") + "/docs/doc.json"
